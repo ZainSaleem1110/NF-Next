@@ -41,7 +41,9 @@ function Login () {
                         <a>Forgot Password?</a>
                         </Link>
                     </div>
-                    <button className='w-full h-[56px] bg-[#AD7EFF] mt-20 sm:rounded-xl rounded-lg text-white text-[18px] font-bold'>Login</button>
+                    <Link href="/landingPage" passHref>
+                    <a className='w-full h-[56px] bg-[#AD7EFF] mt-20 sm:rounded-xl rounded-lg text-white text-[18px] font-bold flex items-center justify-center'>Login</a>
+                    </Link>
                     <p className='text-center text-[14px] font-semibold text-[#7D8CAC] sm:mt-2 mt-5'>or continue with</p>
                     <div className='flex flex-wrap justify-center items-center mt-5 gap-4'>
                         <div className='w-[157px] h-[56px] bg-white rounded-xl flex items-center justify-center'>
