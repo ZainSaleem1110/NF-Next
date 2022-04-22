@@ -25,76 +25,76 @@ function Sidebar() {
                 <MdKeyboardArrowUp className="text-[#AD7EFF] text-[24px]" />
             </div>
             <div>
-                <div className="flex px-5 w-[252px] h-[50px] items-center mt-2 border-b">
+                <a className="flex px-5 w-[252px] h-[50px] items-center mt-2 border-b cursor-pointer">
                     <Image
                         src={Arrow}
                         alt="Arrow" />
                     <span className="text-[#485470] font-semibold text-[18px] ml-6">Today</span>
-                </div>
-                <div className="flex px-5 w-[252px] h-[50px] items-center mt-2 border-b">
+                </a>
+                <a className="flex px-5 w-[252px] h-[50px] items-center mt-2 border-b cursor-pointer">
                     <Image
                         src={UpComing}
                         alt="UpComing" />
                     <span className="text-[#485470] font-semibold text-[18px] ml-6">Upcoming</span>
-                </div>
-                <div className="flex px-5 w-[252px] h-[50px] items-center mt-2 border-b">
+                </a>
+                <a className="flex px-5 w-[252px] h-[50px] items-center mt-2 border-b cursor-pointer">
                     <Image
                         src={Calendar}
                         alt="Calendar" />
                     <span className="text-[#485470] font-semibold text-[18px] ml-6">Ongoing</span>
-                </div>
-                <div className="flex px-5 w-[252px] h-[50px] items-center mt-2">
+                </a>
+                <a className="flex px-5 w-[252px] h-[50px] items-center mt-2 cursor-pointer">
                     <Image
                         src={Notification}
                         alt="Notification" />
                     <span className="text-[#485470] font-semibold text-[18px] ml-6">Newest</span>
-                </div>
+                </a>
             </div>
             <div>
-                <div className="w-[252px] h-[50px] rounded-xl bg-white flex px-5 mt-4 items-center">
+                <a className="w-[252px] h-[50px] rounded-xl bg-white flex px-5 mt-4 items-center cursor-pointer">
                     <Image
                         src={World}
                         alt="World" />
                     <span className="text-[#485470] font-semibold text-[18px] ml-3">Marketplaces</span>
-                </div>
-                <div className="w-[252px] h-[50px] rounded-xl bg-white flex px-5 mt-5 items-center">
+                </a>
+                <a className="w-[252px] h-[50px] rounded-xl bg-white flex px-5 mt-5 items-center cursor-pointer">
                     <Image
                         src={News}
                         alt="News" />
                     <span className="text-[#485470] font-semibold text-[18px] ml-3">NFT News</span>
-                </div>
-                <div className="w-[252px] h-[50px] rounded-xl bg-white flex px-5 mt-5 items-center">
+                </a>
+                <a className="w-[252px] h-[50px] rounded-xl bg-white flex px-5 mt-5 items-center cursor-pointer">
                     <Image
                         src={Blog}
                         alt="Blog" />
                     <span className="text-[#485470] font-semibold text-[18px] ml-3">NFT Blogs</span>
-                </div>
-                <div className="w-[252px] h-[50px] rounded-xl bg-white flex px-5 mt-5 items-center">
+                </a>
+                <a className="w-[252px] h-[50px] rounded-xl bg-white flex px-5 mt-5 items-center cursor-pointer">
                     <Image
                         src={Heart}
                         alt="Heart" />
                     <span className="text-[#485470] font-semibold text-[18px] ml-3">Favourites</span>
-                </div>
-                <div className="w-[252px] h-[50px] rounded-xl bg-white flex px-5 mt-5 items-center">
+                </a>
+                <a className="w-[252px] h-[50px] rounded-xl bg-white flex px-5 mt-5 items-center cursor-pointer">
                     <Image
                         src={Listing}
                         alt="Listing" />
                     <span className="text-[#485470] font-semibold text-[18px] ml-3">My Listings</span>
-                </div>
+                </a>
             </div>
             <div className="mt-24">
-                <div className="w-[252px] h-[50px] rounded-xl bg-white flex px-5 mt-5 items-center">
+                <a className="w-[252px] h-[50px] rounded-xl bg-white flex px-5 mt-5 items-center cursor-pointer">
                     <Image
                         src={Chat}
                         alt="Listing" />
                     <span className="text-[#485470] font-semibold text-[18px] ml-3">Contact us</span>
-                </div>
-                <div className="w-[252px] h-[50px] rounded-xl bg-white flex px-5 mt-5 items-center">
+                </a>
+                <a className="w-[252px] h-[50px] rounded-xl bg-white flex px-5 mt-5 items-center cursor-pointer">
                     <Image
                         src={Alert}
                         alt="Listing" />
                     <span className="text-[#485470] font-semibold text-[18px] ml-3">About us</span>
-                </div>
+                </a>
             </div>
         </div>
     )
