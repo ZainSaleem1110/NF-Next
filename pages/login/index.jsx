@@ -13,9 +13,9 @@ function Login () {
             <Navbar />
             <div className='flex flex-col items-center justify-center sm:my-20 mt-8'>
                 <div className='sm:w-[410px] w-[70%] rounded-t-3xl h-[25px] bg-[#F1F4FB] opacity-50'></div>
-                <div className='sm:w-[490px] w-[100%] bg-[#F1F4FB] sm:rounded-2xl rounded-t-2xl flex flex-col items-center sm:py-10 pt-10 pb-20 sm:px-10 px-2'>
+                <div className='sm:w-[490px] w-[100%] bg-[#F1F4FB] sm:rounded-2xl rounded-t-2xl flex flex-col items-center sm:py-10 pt-10 pb-20 sm:px-10 px-4'>
                     <div className='flex w-full items-center text-[26px]'>
-                        <div className='sm:w-[53px] sm:h-[53px] w-[35px] h-[35px] cursor-pointer rounded-full bg-[#FBFCFD] flex justify-center items-center '>
+                        <div className='w-[53px] h-[53px] cursor-pointer rounded-full bg-[#FBFCFD] sm:flex hidden justify-center items-center '>
                             <BiArrowBack className='sm:text-[24px] text-[16px]'/>
                         </div>
                         <h1 className='text-center w-full font-semibold'>Glad to <br /> meet you again!</h1>
@@ -42,7 +42,7 @@ function Login () {
                         </Link>
                     </div>
                     <button className='w-full h-[56px] bg-[#AD7EFF] mt-20 sm:rounded-xl rounded-lg text-white text-[18px] font-bold'>Login</button>
-                    <p className='text-center text-[14px] font-semibold text-[#7D8CAC] mt-1'>or continue with</p>
+                    <p className='text-center text-[14px] font-semibold text-[#7D8CAC] sm:mt-2 mt-5'>or continue with</p>
                     <div className='flex flex-wrap justify-center items-center mt-5 gap-4'>
                         <div className='w-[157px] h-[56px] bg-white rounded-xl flex items-center justify-center'>
                             <Image src={GoogleLogo} alt="Navbar Logo" />

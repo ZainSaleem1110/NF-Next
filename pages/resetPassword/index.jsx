@@ -7,12 +7,12 @@ function ResetPassword() {
     return (
         <div>
             <Navbar />
-            <div className='flex flex-col items-center justify-center my-20'>
+            <div className='flex flex-col items-center justify-center sm:my-20 pt-10'>
                 <div className='sm:w-[410px] w-[70%] rounded-t-3xl h-[25px] bg-[#F1F4FB] opacity-50'></div>
-                <div className='sm:w-[490px] w-[95%] bg-[#F1F4FB] rounded-2xl flex flex-col items-center py-10 sm:px-10 px-2'>
+                <div className='sm:w-[490px] w-[100%] bg-[#F1F4FB] sm:rounded-2xl rounded-t-2xl flex flex-col items-center sm:py-10 pt-10 pb-20 sm:px-10 px-4'>
                     <div className='flex w-full items-center text-[26px]'>
                     <Link href="/login" passHref>
-                            <a className='sm:w-[53px] sm:h-[53px] w-[35px] h-[35px] cursor-pointer rounded-full bg-[#FBFCFD] flex justify-center items-center'>
+                            <a className='w-[53px] h-[53px] cursor-pointer rounded-full bg-[#FBFCFD] sm:flex hidden justify-center items-center '>
                                 <BiArrowBack className='sm:text-[24px] text-[16px]' />
                             </a>
                         </Link>
