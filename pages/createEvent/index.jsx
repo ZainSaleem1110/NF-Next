@@ -3,7 +3,7 @@ import { BiArrowBack } from 'react-icons/bi'
 import { useRouter } from 'next/router';
 
 function CreateEvent() {
-    const router = useRouter()
+    const router=useRouter()
     return (
         <div>
             <Navbar />
@@ -20,11 +20,11 @@ function CreateEvent() {
                         <h1 className="font-semibold text-[21px] text-[#485470]">Event Details</h1>
                     </div>
                     <div className="w-full mt-10">
-                        <label htmlFor="email" className="font-semibold text-[#485470]">Email Address</label>
+                        <label htmlFor="emailAddress" className="font-semibold text-[#485470]">Email Address</label>
                         <input type="email" className='w-full h-[60px] pl-3 mt-2 rounded-xl border focus:outline-none' placeholder='Your Email Address' />
                     </div>
                     <div className="w-full mt-6">
-                        <label htmlFor="text" className="font-semibold text-[#485470]">Your Project Name</label>
+                        <label htmlFor="ProjectName" className="font-semibold text-[#485470]">Your Project Name</label>
                         <input type="text" className='w-full h-[60px] pl-3 mt-2 rounded-xl border focus:outline-none' placeholder='Type Here' />
                     </div>
                     <div className="font-semibold mt-6">
@@ -32,30 +32,30 @@ function CreateEvent() {
                         <div className="rounded-xl px-4 py-5 bg-white text-[16px] font-medium mt-2">
                             <div>
                                 <input type="radio" name="fav_language" />
-                                <label for="a" className="ml-3 text-[#485470]">All NFTs are minted and revealed and on OpenSea (or other marketplace)</label>
+                                <label htmlFor="a" className="ml-3 text-[#485470]">All NFTs are minted and revealed and on OpenSea (or other marketplace)</label>
                             </div>
                             <div className="mt-4">
                                 <input type="radio" name="fav_language" />
-                                <label for="b" className="ml-3 text-[#485470]">Sale is ongoing and/or not all items have been minted or revealed.</label>
+                                <label htmlFor="b" className="ml-3 text-[#485470]">Sale is ongoing and/or not all items have been minted or revealed.</label>
                             </div>
                             <div className="mt-4">
                                 <input type="radio" name="fav_language" />
-                                <label for="c" className="ml-3 text-[#485470]">Sale is upcoming, date is known.</label>
+                                <label htmlFor="c" className="ml-3 text-[#485470]">Sale is upcoming, date is known.</label>
                             </div>
                             <div className="mt-4">
                                 <input type="radio" name="fav_language" />
-                                <label for="d" className="ml-3 text-[#485470]">Sale is upcoming, date unknown</label>
+                                <label htmlFor="d" className="ml-3 text-[#485470]">Sale is upcoming, date unknown</label>
                             </div>
                         </div>
                     </div>
                     <div className="mt-6">
-                        <label className="font-semibold text-[#485470]">What is the maximum number of items in your collection?</label>
+                        <label htmlFor="text" className="font-semibold text-[#485470]">What is the maximum number of items in your collection?</label>
                         <p className="mt-1 text-[12px] text-[#485470]">Or at least the first batch that you would like to be listed.</p>
                         <input type="text" className='w-full h-[60px] pl-3 mt-4 rounded-xl border focus:outline-none' placeholder='Your Answer' />
                     </div>
                     <div className="mt-6 sm:flex gap-5">
                         <div className="sm:w-[50%]">
-                            <label htmlFor="text" className="text-[#485470]">Select Blockchain</label>
+                            <h1 className="text-[#485470] font-semibold">Select Blockchain</h1>
                             <select
                                 name="categories"
                                 className="w-[100%] py-2 rounded-lg px-3 focus:outline-none cursor-pointer h-[60px] mt-2"
@@ -63,12 +63,14 @@ function CreateEvent() {
                             >
                                 <option
                                     label="Etherium"
+                                    htmlFor="text"
                                     className=" border border-teal-700 text-[#485470]"
                                 >
                                     Etherium
                                 </option>
                                 <option
                                     label="Polygon"
+                                    htmlFor="text"
                                     className=" border border-teal-700 text-[#485470]"
                                 >
                                     Polygon
@@ -76,7 +78,7 @@ function CreateEvent() {
                             </select>
                         </div>
                         <div className="sm:w-[50%] sm:mt-0 mt-6">
-                            <label htmlFor="text" className="text-[#485470]">NFT Marketplace</label>
+                            <h1 className="text-[#485470] font-semibold">NFT Marketplace</h1>
                             <select
                                 name="categories"
                                 className="w-[100%] py-2 rounded-lg px-3 focus:outline-none cursor-pointer h-[60px] mt-2"
@@ -98,7 +100,7 @@ function CreateEvent() {
                         </div>
                     </div>
                     <div className="mt-6">
-                        <label className="font-semibold text-[#485470]">What is your collection's contract address(es)? (If available)</label>
+                        <label htmlFor="text" className="font-semibold text-[#485470]">What is your collection's contract address(es)? (If available)</label>
                         <input type="text" className='w-full h-[60px] pl-3 mt-2 rounded-xl border focus:outline-none' placeholder='Your Answer' />
                     </div>
                     <div className="font-semibold mt-6">
@@ -106,19 +108,19 @@ function CreateEvent() {
                         <div className="rounded-xl px-4 py-5 bg-white text-[16px] font-medium mt-2">
                             <div>
                                 <input type="radio" name="token" />
-                                <label for="a" className="ml-3 text-[#485470]">ERC721</label>
+                                <label htmlFor="a" className="ml-3 text-[#485470]">ERC721</label>
                             </div>
                             <div className="mt-4">
                                 <input type="radio" name="token" />
-                                <label for="b" className="ml-3 text-[#485470]">ERC1155</label>
+                                <label htmlFor="b" className="ml-3 text-[#485470]">ERC1155</label>
                             </div>
                             <div className="mt-4">
                                 <input type="radio" name="token" />
-                                <label for="c" className="ml-3 text-[#485470]">I don't know</label>
+                                <label htmlFor="c" className="ml-3 text-[#485470]">I don't know</label>
                             </div>
                             <div className="mt-4">
                                 <input type="radio" name="token" />
-                                <label for="d" className="ml-3 text-[#485470]">Other</label>
+                                <label htmlFor="d" className="ml-3 text-[#485470]">Other</label>
                             </div>
                         </div>
                     </div>
@@ -174,55 +176,55 @@ function CreateEvent() {
                         </div>
                     </div>
                     <div className="mt-6">
-                        <label className="font-semibold text-[#485470]">If your project is upcoming, what is your Unit Price (ETH)</label>
+                        <label htmlFor="text" className="font-semibold text-[#485470]">If your project is upcoming, what is your Unit Price (ETH)</label>
                         <input type="text" className='w-full h-[60px] pl-3 mt-4 rounded-xl border focus:outline-none' placeholder='Your Answer' />
                     </div>
                     <div className="mt-6 border-b-4 pb-8">
                         <div className="flex justify-between items-center">
-                            <label className="font-semibold text-[#485470]">Event Description (Content)</label>
+                            <label htmlFor="text" className="font-semibold text-[#485470]">Event Description (Content)</label>
                             <p className="text-[12px] text-[#485470]">0/150 Words</p>
                         </div>
                         <textarea type="text" className='w-full min-h-[291px] pl-3 mt-1 rounded-xl border focus:outline-none' />
                     </div>
                     <h1 className="font-semibold text-[21px] mt-10 text-[#485470]">Event Links</h1>
                     <div className="mt-6">
-                        <label className="font-semibold ">OpenSea Link (Important)</label>
+                        <label htmlFor="text" className="font-semibold ">OpenSea Link (Important)</label>
                         <input type="text" className='w-full h-[60px] pl-3 mt-4 rounded-xl border focus:outline-none' placeholder='https://opensea.io/collection/yournftproject' />
                     </div>
                     <div className="mt-6">
-                        <label className="font-semibold text-[#485470]">Website URL</label>
+                        <label htmlFor="text" className="font-semibold text-[#485470]">Website URL</label>
                         <input type="text" className='w-full h-[60px] pl-3 mt-4 rounded-xl border focus:outline-none' placeholder='https//:yourwebsitelink.com' />
                     </div>
                     <div className="mt-6">
-                        <label className="font-semibold text-[#485470]">Your Project's Official Twitter *
+                        <label htmlFor="text" className="font-semibold text-[#485470]">Your Project's Official Twitter *
                         </label>
                         <p className="text-[12px] text-[#485470]">if you don't have an official twitter for the project provide your personal twitter
                         </p>
                         <input type="text" className='w-full h-[60px] pl-3 mt-4 rounded-xl border focus:outline-none' placeholder='https//:yourwebsitelink.com' />
                     </div>
                     <div className="mt-6">
-                        <label className="font-semibold text-[#485470]">Official Discord Server</label>
+                        <label htmlFor="text" className="font-semibold text-[#485470]">Official Discord Server</label>
                         <input type="text" className='w-full h-[60px] pl-3 mt-4 rounded-xl border focus:outline-none' placeholder='https://discord.gg/yournftserver' />
                     </div>
                     <div className="mt-6">
-                        <label className="font-semibold text-[#485470]">If your project is upcoming, what is your Unit Price (ETH)</label>
+                        <label htmlFor="text" className="font-semibold text-[#485470]">If your project is upcoming, what is your Unit Price (ETH)</label>
                         <input type="text" className='w-full h-[60px] pl-3 mt-4 rounded-xl border focus:outline-none' placeholder='Your answer' />
                     </div>
                     <div className="mt-6">
-                        <label className="font-semibold text-[#485470]">Do you agree to pay the 2 ETH listing fee?
+                        <label htmlFor="text" className="font-semibold text-[#485470]">Do you agree to pay the 2 ETH listing fee?
                         </label>
                         <p className="text-[12px] text-[#485470]">This allows your project to be listed on rarity.tools forever (as long as the site exists)
                         </p>
                         <div className="flex items-center h-[60px] rounded-xl border mt-2 bg-white px-3">
                             <input type="radio" name="fee" />
-                            <label for="c" className="ml-3 text-[#485470]">Yes</label>
+                            <label htmlFor="c" className="ml-3 text-[#485470]">Yes</label>
                         </div>
                     </div>
                     <p className="text-[13px] text-[#485470]">By clicking the "Submit" button, I agree to the Terms of Use, on behalf of myself and the entity that I am submitting this form on behalf of, and I acknowledge and represent that I have read and fully understand the Terms of Use (https://NFTTREE/terms/).</p>
                     <p className="text-[16px] text-center mt-10 font-bold text-[#485470]">A copy of your responses will be emailed to the address that you provided.</p>
                 </div>
                 <div className="flex justify-between items-center mt-4 md:w-[752px] w-[100%]">
-                    <button className="w-[220px] h-[56px] bg-[#AD7EFF] rounded-xl text-white" onClick={() => { router.push("/checkout") }}>Submit</button>
+                    <button className="w-[220px] h-[56px] bg-[#AD7EFF] rounded-xl text-white" onClick={()=>{router.push("/checkout")}}>Submit</button>
                     <button className="w-[220px] h-[56px] bg-white border rounded-xl text-[#7D8CAC]">Clear Form</button>
                 </div>
             </div>
