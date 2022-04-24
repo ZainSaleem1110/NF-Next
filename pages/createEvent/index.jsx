@@ -94,7 +94,7 @@ function CreateEvent() {
                         </div>
                     </div>
                     <div className="mt-6">
-                        <label htmlFor="text" className="font-semibold text-[#485470]">What is your collection's contract address(es)? (If available)</label>
+                        <label htmlFor="text" className="font-semibold text-[#485470]">What is your collection{"'"}s contract address(es)? (If available)</label>
                         <input type="text" className='w-full h-[60px] pl-3 mt-2 rounded-xl border focus:outline-none' placeholder='Your Answer'/>
                     </div>
                     <div className="font-semibold mt-6">
@@ -120,7 +120,7 @@ function CreateEvent() {
                     </div>
                     <div className="mt-6">
                         <h1 className="font-semibold text-[#485470]">What kind of token standard is your contract?</h1>
-                        <p className="text-[12px] mt-1 text-[#485470]">Specify future date if not launched yet, past date if sale already started. Can leave blank if not determined yet or so long ago it doesn't matter.</p>
+                        <p className="text-[12px] mt-1 text-[#485470]">Specify future date if not launched yet{","} past date if sale already started. Can leave blank if not determined yet or so long ago it doesn{"'"}t matter.</p>
                         <div className="flex justify-between items-end w-full">
                             <div className="mt-4 flex flex-col w-[45%]">
                                 <label htmlFor="text" className="font-semibold text-[#485470]">Date</label>
