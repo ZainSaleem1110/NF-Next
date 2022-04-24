@@ -187,9 +187,9 @@ function CreateEvent() {
                         <input type="text" className='w-full h-[60px] pl-3 mt-4 rounded-xl border focus:outline-none' placeholder='https//:yourwebsitelink.com'/>
                     </div>
                     <div className="mt-6">
-                        <label htmlFor="text" className="font-semibold text-[#485470]">Your Project's Official Twitter *
+                        <label htmlFor="text" className="font-semibold text-[#485470]">Your Project{"'"}s Official Twitter *
                         </label>
-                        <p className="text-[12px] text-[#485470]">if you don't have an official twitter for the project provide your personal twitter
+                        <p className="text-[12px] text-[#485470]">if you don{"'"}t have an official twitter for the project provide your personal twitter
                         </p>
                         <input type="text" className='w-full h-[60px] pl-3 mt-4 rounded-xl border focus:outline-none' placeholder='https//:yourwebsitelink.com'/>
                     </div>
@@ -198,7 +198,7 @@ function CreateEvent() {
                         <input type="text" className='w-full h-[60px] pl-3 mt-4 rounded-xl border focus:outline-none' placeholder='https://discord.gg/yournftserver'/>
                     </div>
                     <div className="mt-6">
-                        <label htmlFor="text" className="font-semibold text-[#485470]">If your project is upcoming, what is your Unit Price (ETH)</label>
+                        <label htmlFor="text" className="font-semibold text-[#485470]">If your project is upcoming{","} what is your Unit Price (ETH)</label>
                         <input type="text" className='w-full h-[60px] pl-3 mt-4 rounded-xl border focus:outline-none' placeholder='Your answer'/>
                     </div>
                     <div className="mt-6">
@@ -211,7 +211,7 @@ function CreateEvent() {
                             <label htmlFor="c" className="ml-3 text-[#485470]">Yes</label>
                         </div>
                     </div>
-                    <p className="text-[13px] text-[#485470]">By clicking the "Submit" button, I agree to the Terms of Use, on behalf of myself and the entity that I am submitting this form on behalf of, and I acknowledge and represent that I have read and fully understand the Terms of Use (https://NFTTREE/terms/).</p>
+                    <p className="text-[13px] text-[#485470]">By clicking the {"'"}Submit{"'"} button, I agree to the Terms of Use, on behalf of myself and the entity that I am submitting this form on behalf of, and I acknowledge and represent that I have read and fully understand the Terms of Use (https://NFTTREE/terms/).</p>
                     <p className="text-[16px] text-center mt-10 font-bold text-[#485470]">A copy of your responses will be emailed to the address that you provided.</p>
                 </div>
                 <div className="flex justify-between items-center mt-4 md:w-[752px] w-[100%]">
