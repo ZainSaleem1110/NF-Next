@@ -20,11 +20,11 @@ function CreateEvent() {
                         <h1 className="font-semibold text-[21px] text-[#485470]">Event Details</h1>
                     </div>
                     <div className="w-full mt-10">
-                        <label for="email" className="font-semibold text-[#485470]">Email Address</label>
+                        <label className="font-semibold text-[#485470]">Email Address</label>
                         <input type="email" className='w-full h-[60px] pl-3 mt-2 rounded-xl border focus:outline-none' placeholder='Your Email Address' />
                     </div>
                     <div className="w-full mt-6">
-                        <label for="text" className="font-semibold text-[#485470]">Your Project Name</label>
+                        <label className="font-semibold text-[#485470]">Your Project Name</label>
                         <input type="text" className='w-full h-[60px] pl-3 mt-2 rounded-xl border focus:outline-none' placeholder='Type Here' />
                     </div>
                     <div className="font-semibold mt-6">
@@ -55,7 +55,7 @@ function CreateEvent() {
                     </div>
                     <div className="mt-6 sm:flex gap-5">
                         <div className="sm:w-[50%]">
-                            <label for="" className="text-[#485470]">Select Blockchain</label>
+                            <label className="text-[#485470]">Select Blockchain</label>
                             <select
                                 name="categories"
                                 className="w-[100%] py-2 rounded-lg px-3 focus:outline-none cursor-pointer h-[60px] mt-2"
@@ -76,7 +76,7 @@ function CreateEvent() {
                             </select>
                         </div>
                         <div className="sm:w-[50%] sm:mt-0 mt-6">
-                            <label for="" className="text-[#485470]">NFT Marketplace</label>
+                            <label className="text-[#485470]">NFT Marketplace</label>
                             <select
                                 name="categories"
                                 className="w-[100%] py-2 rounded-lg px-3 focus:outline-none cursor-pointer h-[60px] mt-2"
@@ -127,11 +127,11 @@ function CreateEvent() {
                         <p className="text-[12px] mt-1 text-[#485470]">Specify future date if not launched yet, past date if sale already started. Can leave blank if not determined yet or so long ago it doesn't matter.</p>
                         <div className="flex justify-between items-end w-full">
                             <div className="mt-4 flex flex-col w-[45%]">
-                                <label for="" className="font-semibold text-[#485470]">Date</label>
+                                <label className="font-semibold text-[#485470]">Date</label>
                                 <input type="date" className='h-[60px]  px-3 mt-2 rounded-xl border focus:outline-none' />
                             </div>
                             <div className="mt-4 flex flex-col w-[30%]">
-                                <label for="" className="font-semibold text-[#485470]">Time</label>
+                                <label className="font-semibold text-[#485470]">Time</label>
                                 <input type="text" className='h-[60px] text-center px-3 mt-2 rounded-xl border focus:outline-none' placeholder="00:00" />
                             </div>
                             <select
@@ -159,7 +159,7 @@ function CreateEvent() {
                         <p className="text-[12px] mt-1 text-[#485470]">Specify future date if not ended yet, past date if sale already ended. Can leave blank if not determined yet or so long ago it doesn't matter.</p>
                         <div className="flex justify-between items-end w-full">
                             <div className="mt-4 flex flex-col w-[100%]">
-                                <label for="" className="font-semibold text-[#485470]">Date</label>
+                                <label className="font-semibold text-[#485470]">Date</label>
                                 <input type="date" className='h-[60px]  px-3 mt-2 rounded-xl border focus:outline-none' />
                             </div>
                         </div>
