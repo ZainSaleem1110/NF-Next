@@ -98,7 +98,7 @@ function CreateEvent() {
                         <input type="text" className='w-full h-[60px] pl-3 mt-2 rounded-xl border focus:outline-none' placeholder='Your Answer'/>
                     </div>
                     <div className="font-semibold mt-6">
-                        <h1 className="text-[#485470]">What kind of token standard is your contract? </h1>
+                        <h1 className="text-[#485470]">What kind of token standard is your contract?</h1>
                         <div className="rounded-xl px-4 py-5 bg-white text-[16px] font-medium mt-2">
                             <div>
                                 <input type="radio" name="token"/>
