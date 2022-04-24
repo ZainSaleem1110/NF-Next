@@ -17,63 +17,68 @@ import Img04 from '../../assets/Img04.svg'
 import Img05 from '../../assets/Img05.svg'
 import Img06 from '../../assets/Img06.svg'
 import BlogCard from '../../Components/BlogCard'
+import Link from 'next/link'
 
-const BlogImage=[
-    Img01,Img02,Img03,Img04,Img05,Img06
+const BlogImage = [
+    Img01, Img02, Img03, Img04, Img05, Img06
 ]
 
 function LandingPage() {
     return (
-        <div className="">
+        <div className="w-[100%]">
             <AuthNavbar />
             <div className="flex">
                 <div className="w-[290px] bg-[#F1F4FB] lg:flex h-full hidden">
-                    <Sidebar/>
+                    <Sidebar />
                 </div>
-                <div className="w-full py-8 sm:pl-8 pl-2 overflow-x-hidden">
+                <div className="w-full pt-8 sm:pl-8 pl-2 overflow-x-hidden">
                     <div className="overflow-x-auto category">
                         <div className="h-[44px] w-[1100px] flex justify-between">
-                            <div className="flex px-4 rounded-lg bg-[#AD7EFF] items-center">
+                            <div className="flex px-4 rounded-lg bg-[#AD7EFF] items-center cursor-pointer">
                                 <Image src={All} alt="" />
                                 <span className="pl-3 text-white">All</span>
                             </div>
-                            <div className="flex px-4 rounded-lg bg-white border items-center">
+                            <div className="flex px-4 rounded-lg bg-white border items-center cursor-pointer">
                                 <Image src={Etherium} alt="" />
                                 <span className="pl-3">Etherium</span>
                             </div>
-                            <div className="flex px-4 rounded-lg bg-white border items-center">
+                            <div className="flex px-4 rounded-lg bg-white border items-center cursor-pointer">
                                 <Image src={Polygon} alt="" />
                                 <span className="pl-3">Polygon</span>
                             </div>
-                            <div className="flex px-4 rounded-lg bg-white border items-center">
+                            <div className="flex px-4 rounded-lg bg-white border items-center cursor-pointer">
                                 <Image src={Wax} alt="" />
                                 <span className="pl-3">Wax</span>
                             </div>
-                            <div className="flex px-4 rounded-lg bg-white border items-center">
+                            <div className="flex px-4 rounded-lg bg-white border items-center cursor-pointer">
                                 <Image src={Solana} alt="" />
                                 <span className="pl-3">Solana</span>
                             </div>
-                            <div className="flex px-4 rounded-lg bg-white border items-center">
+                            <div className="flex px-4 rounded-lg bg-white border items-center cursor-pointer">
                                 <Image src={Binance} alt="" />
                                 <span className="pl-3">Binance</span>
                             </div>
-                            <div className="flex px-4 rounded-lg bg-white border items-center">
+                            <div className="flex px-4 rounded-lg bg-white border items-center cursor-pointer">
                                 <Image src={Tron} alt="" />
                                 <span className="pl-3">Tron</span>
                             </div>
-                            <div className="flex px-4 rounded-lg bg-white border items-center">
+                            <div className="flex px-4 rounded-lg bg-white border items-center cursor-pointer">
                                 <Image src={Wave} alt="" />
                                 <span className="pl-3">Wave</span>
                             </div>
-                            <div className="flex px-4 rounded-lg bg-white border items-center">
+                            <div className="flex px-4 rounded-lg bg-white border items-center cursor-pointer">
                                 <Image src={Avalanche} alt="" />
                                 <span className="pl-3">Avalanche</span>
                             </div>
                         </div>
                     </div>
-                    <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-col gap-5 mt-10 sm:pr-8 pr-2">
-                        {BlogImage.map((Images,index)=>{
-                            return <BlogCard BlogImg={Images} key={index}/>
+                    <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-col gap-5 mt-10 sm:pr-8 pr-2 h-[800px] overflow-y-auto category">
+                        {BlogImage.map((Images, index) => {
+                            return <Link href="/detailPage" passHref>
+                                <a className="cursor-pointer">
+                                <BlogCard BlogImg={Images} key={index} />
+                                </a>
+                            </Link>
                         })}
                     </div>
                 </div>

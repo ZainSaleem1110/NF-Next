@@ -18,7 +18,7 @@ function Login () {
                         <div className='w-[53px] h-[53px] cursor-pointer rounded-full bg-[#FBFCFD] sm:flex hidden justify-center items-center '>
                             <BiArrowBack className='sm:text-[24px] text-[16px]'/>
                         </div>
-                        <h1 className='text-center w-full font-semibold'>Glad to <br /> meet you again!</h1>
+                        <h1 className='text-center w-[80%] font-semibold'>Glad to <br /> meet you again!</h1>
                     </div>
                     <div className='sm:w-[410px] w-[100%] h-[56px] bg-white text-[#7D8CAC] sm:rounded-xl rounded-lg border mt-10 flex items-center px-5'>
                         <AiOutlineMail className='text-[20px]' />

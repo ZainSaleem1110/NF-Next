@@ -21,7 +21,7 @@ function Signup () {
                                 <BiArrowBack className='sm:text-[24px] text-[16px]' />
                             </a>
                         </Link>
-                        <h1 className='text-center w-full font-semibold'>Create your <br /> New Account</h1>
+                        <h1 className='text-center w-[80%] font-semibold'>Create your <br /> New Account</h1>
                     </div>
                     <div className='sm:w-[410px] w-[100%] sm:h-[56px] h-[40px] bg-white text-[#7D8CAC] sm:rounded-xl rounded-lg border mt-10 flex items-center px-5'>
                         <FaRegUser className='text-[16px]' />

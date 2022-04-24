@@ -16,7 +16,7 @@ function ResetPassword() {
                                 <BiArrowBack className='sm:text-[24px] text-[16px]' />
                             </a>
                         </Link>
-                        <h1 className='text-center w-full font-semibold'>Reset Password</h1>
+                        <h1 className='text-center w-[80%] font-semibold'>Reset Password</h1>
                     </div>
                     <p className='pl-8 text-center text-[#444F68] text-[15px] leading-tight font-normal'>Please enter your email address to  <br /> request a password reset</p>
                     <div className='sm:w-[410px] w-[100%] sm:h-[56px] h-[40px] bg-white text-[#7D8CAC] sm:rounded-xl rounded-lg border mt-10 flex items-center px-5'>
