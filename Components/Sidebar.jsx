@@ -14,7 +14,7 @@ import { MdKeyboardArrowUp } from 'react-icons/md'
 import Image from 'next/image';
 function Sidebar() {
     return (
-        <div className="w-[306px] h-[972px] overflow-hidden py-10 flex flex-col bg-[#F1F4FB] px-4">
+        <div className="w-[290px] overflow-hidden py-10 flex flex-col px-4 items-center">
             <div className="w-[252px] h-[50px] rounded-xl bg-white flex items-center justify-between border border-[#AD7EFF] px-5">
                 <div className="flex">
                     <Image
