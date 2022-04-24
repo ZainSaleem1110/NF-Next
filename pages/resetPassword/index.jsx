@@ -11,7 +11,7 @@ function ResetPassword() {
                 <div className='sm:w-[410px] w-[70%] rounded-t-3xl h-[25px] bg-[#F1F4FB] opacity-50'></div>
                 <div className='sm:w-[490px] w-[100%] bg-[#F1F4FB] sm:rounded-2xl rounded-t-2xl flex flex-col items-center sm:py-10 pt-10 pb-20 sm:px-10 px-4'>
                     <div className='flex w-full items-center text-[26px]'>
-                    <Link href="/login" passHref>
+                        <Link href="/login" passHref>
                             <a className='w-[53px] h-[53px] cursor-pointer rounded-full bg-[#FBFCFD] sm:flex hidden justify-center items-center '>
                                 <BiArrowBack className='sm:text-[24px] text-[16px]' />
                             </a>
@@ -24,7 +24,7 @@ function ResetPassword() {
                         <input type="email" className='sm:w-[410px] w-full pl-4 focus:outline-none' placeholder='abc@email.com' />
                     </div>
                     <Link href="/verification" passHref>
-                    <a className='w-full sm:h-[56px] h-[40px] bg-[#AD7EFF] mt-20 sm:rounded-xl rounded-lg text-white text-[18px] font-bold flex justify-center items-center'>Send Code</a>
+                        <a className='w-full sm:h-[56px] h-[40px] bg-[#AD7EFF] mt-20 sm:rounded-xl rounded-lg text-white text-[18px] font-bold flex justify-center items-center'>Send Code</a>
                     </Link>
                 </div>
             </div>

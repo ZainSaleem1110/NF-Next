@@ -76,7 +76,7 @@ function LandingPage() {
                         {BlogImage.map((Images, index) => {
                             return <Link href="/detailPage" passHref>
                                 <a className="cursor-pointer">
-                                <BlogCard BlogImg={Images} key={index} />
+                                    <BlogCard BlogImg={Images} key={index} />
                                 </a>
                             </Link>
                         })}

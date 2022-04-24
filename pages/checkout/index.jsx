@@ -5,7 +5,7 @@ import MetaMask from '../../assets/metaMask.svg'
 import { useRouter } from 'next/router'
 
 function Checkout() {
-    const router=useRouter()
+    const router = useRouter()
     return (
         <div>
             <Navbar />
@@ -22,7 +22,7 @@ function Checkout() {
                         <p className="font-semibold">Listing Fees</p>
                         <p className="font-bold">2 ETH</p>
                     </div>
-                    <button className='sm:w-[410px] w-[100%] h-[56px] bg-black text-[16px] sm:rounded-xl rounded-lg border mt-7 flex items-center justify-between px-5' onClick={()=>{router.push("/successfullyListed")}}>
+                    <button className='sm:w-[410px] w-[100%] h-[56px] bg-black text-[16px] sm:rounded-xl rounded-lg border mt-7 flex items-center justify-between px-5' onClick={() => { router.push("/successfullyListed") }}>
                         <Image src={MetaMask} alt="" />
                         <p className="w-[90%] text-center text-white font-bold">Connect with MetaMask</p>
                     </button>

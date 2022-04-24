@@ -3,7 +3,7 @@ import { BiArrowBack } from 'react-icons/bi'
 import { useRouter } from 'next/router';
 
 function CreateEvent() {
-    const router=useRouter()
+    const router = useRouter()
     return (
         <div>
             <Navbar />
@@ -222,7 +222,7 @@ function CreateEvent() {
                     <p className="text-[16px] text-center mt-10 font-bold text-[#485470]">A copy of your responses will be emailed to the address that you provided.</p>
                 </div>
                 <div className="flex justify-between items-center mt-4 md:w-[752px] w-[100%]">
-                    <button className="w-[220px] h-[56px] bg-[#AD7EFF] rounded-xl text-white" onClick={()=>{router.push("/checkout")}}>Submit</button>
+                    <button className="w-[220px] h-[56px] bg-[#AD7EFF] rounded-xl text-white" onClick={() => { router.push("/checkout") }}>Submit</button>
                     <button className="w-[220px] h-[56px] bg-white border rounded-xl text-[#7D8CAC]">Clear Form</button>
                 </div>
             </div>

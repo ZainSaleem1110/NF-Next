@@ -8,7 +8,7 @@ import GoogleLogo from '../../assets/google.svg'
 import FacebookLogo from '../../assets/facebook.svg'
 import Link from 'next/link'
 
-function Signup () {
+function Signup() {
     return (
         <div>
             <Navbar />

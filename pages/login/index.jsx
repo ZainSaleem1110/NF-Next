@@ -7,7 +7,7 @@ import GoogleLogo from '../../assets/google.svg'
 import FacebookLogo from '../../assets/facebook.svg'
 import Link from 'next/link'
 
-function Login () {
+function Login() {
     return (
         <div>
             <Navbar />
@@ -16,7 +16,7 @@ function Login () {
                 <div className='sm:w-[490px] w-[100%] bg-[#F1F4FB] sm:rounded-2xl rounded-t-2xl flex flex-col items-center sm:py-10 pt-10 pb-20 sm:px-10 px-4'>
                     <div className='flex w-full items-center text-[26px]'>
                         <div className='w-[53px] h-[53px] cursor-pointer rounded-full bg-[#FBFCFD] sm:flex hidden justify-center items-center '>
-                            <BiArrowBack className='sm:text-[24px] text-[16px]'/>
+                            <BiArrowBack className='sm:text-[24px] text-[16px]' />
                         </div>
                         <h1 className='text-center w-[80%] font-semibold'>Glad to <br /> meet you again!</h1>
                     </div>
@@ -38,11 +38,11 @@ function Login () {
                             <h4 className='ml-3'>Remember Me</h4>
                         </div>
                         <Link href="/resetPassword" passHref>
-                        <a>Forgot Password?</a>
+                            <a>Forgot Password?</a>
                         </Link>
                     </div>
                     <Link href="/landingPage" passHref>
-                    <a className='w-full h-[56px] bg-[#AD7EFF] mt-20 sm:rounded-xl rounded-lg text-white text-[18px] font-bold flex items-center justify-center'>Login</a>
+                        <a className='w-full h-[56px] bg-[#AD7EFF] mt-20 sm:rounded-xl rounded-lg text-white text-[18px] font-bold flex items-center justify-center'>Login</a>
                     </Link>
                     <p className='text-center text-[14px] font-semibold text-[#7D8CAC] sm:mt-2 mt-5'>or continue with</p>
                     <div className='flex flex-wrap justify-center items-center mt-5 gap-4'>
@@ -56,7 +56,7 @@ function Login () {
                         </div>
                     </div>
                     <Link href="/signUp" passHref>
-                    <p className='text-[14px] mt-3 cursor-pointer'>Don’t have an account? <span className='text-[#AD7EFF]'> Sign up</span></p>
+                        <p className='text-[14px] mt-3 cursor-pointer'>Don’t have an account? <span className='text-[#AD7EFF]'> Sign up</span></p>
                     </Link>
                 </div>
             </div>
