@@ -3,7 +3,7 @@ import Navbar from '../../Components/Navbar'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 
-function index() {
+function SuccessfullyListed() {
     const router = useRouter()
     return (
         <>
@@ -19,4 +19,6 @@ function index() {
     )
 }
 
-export default index
+SuccessfullyListed.displayName = 'SuccessfullyListed';
+
+export default SuccessfullyListed

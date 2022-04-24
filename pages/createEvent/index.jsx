@@ -110,7 +110,7 @@ function CreateEvent() {
                             </div>
                             <div className="mt-4">
                                 <input type="radio" name="token"/>
-                                <label htmlFor="c" className="ml-3 text-[#485470]">I don't know</label>
+                                <label htmlFor="c" className="ml-3 text-[#485470]">I don{"'"}t know</label>
                             </div>
                             <div className="mt-4">
                                 <input type="radio" name="token"/>
@@ -211,7 +211,7 @@ function CreateEvent() {
                             <label htmlFor="c" className="ml-3 text-[#485470]">Yes</label>
                         </div>
                     </div>
-                    <p className="text-[13px] text-[#485470]">By clicking the {"'"}Submit{"'"} button, I agree to the Terms of Use, on behalf of myself and the entity that I am submitting this form on behalf of, and I acknowledge and represent that I have read and fully understand the Terms of Use (https://NFTTREE/terms/).</p>
+                    <p className="text-[13px] text-[#485470]">By clicking the {"'"}Submit{"'"} button, I agree to the Terms of Use, on behalf of myself and the entity that I am submitting this form on behalf of{","} and I acknowledge and represent that I have read and fully understand the Terms of Use (https://NFTTREE/terms/).</p>
                     <p className="text-[16px] text-center mt-10 font-bold text-[#485470]">A copy of your responses will be emailed to the address that you provided.</p>
                 </div>
                 <div className="flex justify-between items-center mt-4 md:w-[752px] w-[100%]">
