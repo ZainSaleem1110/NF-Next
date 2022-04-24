@@ -148,8 +148,8 @@ function CreateEvent() {
                         </div>
                     </div>
                     <div className="mt-6">
-                        <h1 className="font-semibold text-[#485470]">Your Project's Sale End Date (If available)</h1>
-                        <p className="text-[12px] mt-1 text-[#485470]">Specify future date if not ended yet, past date if sale already ended. Can leave blank if not determined yet or so long ago it doesn't matter.</p>
+                        <h1 className="font-semibold text-[#485470]">Your Project{"'"}s Sale End Date (If available)</h1>
+                        <p className="text-[12px] mt-1 text-[#485470]">Specify future date if not ended yet{","} past date if sale already ended. Can leave blank if not determined yet or so long ago it doesn{"'"}t matter.</p>
                         <div className="flex justify-between items-end w-full">
                             <div className="mt-4 flex flex-col w-[100%]">
                                 <label htmlFor="text" className="font-semibold text-[#485470]">Date</label>
@@ -158,8 +158,8 @@ function CreateEvent() {
                         </div>
                     </div>
                     <div className="mt-6">
-                        <h1 className="font-semibold text-[#485470]">Your Project's Reveal Date (If available)</h1>
-                        <p className="text-[12px] mt-1 text-[#485470]">Specify future date if not revealed yet, past date if already revealed. Can leave blank if not determined yet or so long ago it doesn't matter.</p>
+                        <h1 className="font-semibold text-[#485470]">Your Project{"'"}s Reveal Date (If available)</h1>
+                        <p className="text-[12px] mt-1 text-[#485470]">Specify future date if not revealed yet{","} past date if already revealed. Can leave blank if not determined yet or so long ago it doesn{"'"}t matter.</p>
                         <div className="flex justify-between items-end w-full">
                             <div className="mt-2 flex flex-col w-[100%]">
                                 <input type="text" className='h-[60px]  pl-3 rounded-xl border focus:outline-none' placeholder="Your Answer"/>
@@ -167,7 +167,7 @@ function CreateEvent() {
                         </div>
                     </div>
                     <div className="mt-6">
-                        <label htmlFor="text" className="font-semibold text-[#485470]">If your project is upcoming, what is your Unit Price (ETH)</label>
+                        <label htmlFor="text" className="font-semibold text-[#485470]">If your project is upcoming{","} what is your Unit Price (ETH)</label>
                         <input type="text" className='w-full h-[60px] pl-3 mt-4 rounded-xl border focus:outline-none' placeholder='Your Answer'/>
                     </div>
                     <div className="mt-6 border-b-4 pb-8">
