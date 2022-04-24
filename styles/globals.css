@@ -79,3 +79,12 @@ input:checked + .slider:before {
 .category::-webkit-scrollbar {
   display: none;
 }
+
+.dropdown{
+  height:0px;
+  transition: 2s;
+}
+.dropOpen{
+  height: 232px;
+  transition: 2s;
+}

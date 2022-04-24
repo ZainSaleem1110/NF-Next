@@ -22,7 +22,7 @@ function AuthNav() {
                     </div>
                     <div className="flex gap-5">
                         <button className="bg-[#AD7EFF] text-white px-8 rounded-xl font-semibold text-[18px]" onClick={() => { router.push("/createEvent") }}>Create Event</button>
-                        <button className="bg-[#7D8CAC] text-white px-7 rounded-xl font-semibold text-[18px]">Sign in</button>
+                        <button className="bg-[#7D8CAC] text-white px-7 rounded-xl font-semibold text-[18px]" onClick={()=>{router.push("/login")}}>Sign in</button>
                     </div>
                 </div>
                 <div className="lg:hidden flex bg-white rounded-full w-[47px] h-[47px] items-center justify-center cursor-pointer">

@@ -23,16 +23,20 @@ const BlogImage = [
     Img01, Img02, Img03, Img04, Img05, Img06
 ]
 
-function LandingPage() {
+function Marketplaces() {
     return (
         <div className="w-[100%]">
             <AuthNavbar />
             <div className="flex">
-                <div className="w-[290px] bg-[#F1F4FB] lg:flex hidden">
+                <div className="w-[290px] bg-[#F1F4FB] lg:flex h-full hidden">
                     <Sidebar />
                 </div>
                 <div className="w-full pt-8 sm:pl-8 pl-2 overflow-x-hidden">
-                    <div className="overflow-x-auto category">
+                    <Link href="/landingPage" passHref>
+                        <a className="text-[15px] text-[#FE7762] font-semibold cursor-pointer">Go Back</a>
+                    </Link>
+                    <h1 className="text-[28px] text-[#212121] font-bold">OpenSea Events</h1>
+                    <div className="overflow-x-auto category mt-4">
                         <div className="h-[44px] w-[1100px] flex justify-between">
                             <div className="flex px-4 rounded-lg bg-[#AD7EFF] items-center cursor-pointer">
                                 <Image src={All} alt="" />
@@ -87,6 +91,6 @@ function LandingPage() {
     )
 }
 
-LandingPage.displayName = 'LandingPage';
+Marketplaces.displayName = 'Marketplaces';
 
-export default LandingPage
+export default Marketplaces

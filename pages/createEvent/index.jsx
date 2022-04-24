@@ -11,7 +11,7 @@ function CreateEvent() {
                 <div className='md:w-[680px] w-[70%] rounded-t-3xl h-[25px] bg-[#F1F4FB] opacity-50'></div>
                 <div className='md:w-[752px] w-[100%] bg-[#F1F4FB] sm:rounded-2xl rounded-t-2xl flex flex-col sm:py-10 pt-10 pb-20 sm:px-10 px-4'>
                     <div className='flex items-center text-[26px] border-b-2 pb-4'>
-                        <div className='w-[53px] h-[53px] cursor-pointer rounded-full bg-[#FBFCFD] sm:flex hidden justify-center items-center'>
+                        <div className='w-[53px] h-[53px] cursor-pointer rounded-full bg-[#FBFCFD] sm:flex hidden justify-center items-center' onClick={()=>{router.push("/detailPage")}}>
                             <BiArrowBack className='sm:text-[24px] text-[16px]'/>
                         </div>
                         <h1 className='text-center w-[80%] font-semibold text-[#485470]'>Create your Event</h1>
