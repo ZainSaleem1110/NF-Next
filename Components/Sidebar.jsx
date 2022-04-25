@@ -82,7 +82,7 @@ function Sidebar() {
                     <span className="text-[#485470] font-semibold text-[18px] ml-3">NFT Blogs</span>
                 </a>
                 </Link>
-                <Link href="/favourites" passHref>
+                <Link href="/favourite" passHref>
                 <a className="w-[252px] h-[50px] rounded-xl bg-white flex px-5 mt-5 items-center cursor-pointer">
                     <Image
                         src={Heart}

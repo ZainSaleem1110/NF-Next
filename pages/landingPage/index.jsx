@@ -17,13 +17,14 @@ import Img04 from '../../assets/Img04.svg'
 import Img05 from '../../assets/Img05.svg'
 import Img06 from '../../assets/Img06.svg'
 import BlogCard from '../../Components/BlogCard'
-import Link from 'next/link'
+import { useRouter } from 'next/router';
 
 const BlogImage = [
     Img01, Img02, Img03, Img04, Img05, Img06
 ]
 
 function LandingPage() {
+    const router=useRouter()
     return (
         <div className="w-[100%]">
             <AuthNavbar />
@@ -74,11 +75,11 @@ function LandingPage() {
                     </div>
                     <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-col gap-5 mt-10 sm:pr-8 pr-2 h-[800px] overflow-y-auto category">
                         {BlogImage.map((Images, index) => {
-                            return <Link href="/detailPage" passHref key={index}>
+                            return <div key={index} onClick={()=>{router.push("/detailPage")}}>
                                 <a className="cursor-pointer">
                                     <BlogCard BlogImg={Images} key={index} />
                                 </a>
-                            </Link>
+                            </div>
                         })}
                     </div>
                 </div>
