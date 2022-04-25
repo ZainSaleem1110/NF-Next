@@ -2,10 +2,10 @@ import AuthNavbar from '../../Components/AuthNavbar'
 import Sidebar from '../../Components/Sidebar'
 import NotFavourite from '../../assets/notFavourite.svg'
 import Image from 'next/image'
-import BlogCard from '../../Components/BlogCard'
+import BlogCard from '../../Components/favouriteCard'
 import Img01 from '../../assets/Img01.svg'
 
-const Data = ["abcd"]
+const Data = []
 
 function Favourite() {
     return (

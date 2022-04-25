@@ -3,7 +3,7 @@ import Sidebar from '../../Components/Sidebar'
 import Empty from '../../assets/empty.svg'
 import ListingArrow from '../../assets/listingArrow.svg'
 import Image from 'next/image'
-import BlogCard from '../../Components/BlogCard'
+import BlogCard from '../../Components/favouriteCard'
 import Img01 from '../../assets/Img01.svg'
 import { useRouter } from 'next/router'
 
