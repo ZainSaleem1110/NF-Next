@@ -5,7 +5,7 @@ import Image from 'next/image'
 import BlogCard from '../../Components/BlogCard'
 import Img01 from '../../assets/Img01.svg'
 
-const Data = []
+const Data = ["abcd"]
 
 function Favourite() {
     return (
@@ -24,8 +24,10 @@ function Favourite() {
                         </div>
                     )}
                     {Data.length > 0 && (
-                        <div>
+                        <div className="w-full pt-8 sm:pl-8 pl-2 overflow-x-hidden">
+                        <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-col gap-5 mt-10 sm:pr-8 pr-2 overflow-y-auto category">
                             <BlogCard BlogImg={Img01}/>
+                        </div>
                         </div>
                     )}
                 </div>
