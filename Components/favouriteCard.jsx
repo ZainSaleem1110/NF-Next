@@ -1,4 +1,4 @@
-import Heart from '../assets/heart-red.svg'
+import Heart from '../assets/Heart-red.svg'
 import Time from '../assets/time.svg'
 import BoxIcon from '../assets/ethem-color.svg'
 import UpComing from '../assets/speaker-color.svg'
