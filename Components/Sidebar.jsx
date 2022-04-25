@@ -21,7 +21,7 @@ function Sidebar() {
     }
 
     return (
-        <div className="w-[290px] py-10 flex flex-col px-4 items-center">
+        <div className="w-[290px] h-[950px] py-10 flex flex-col px-4 items-center">
             <div className="w-[252px] h-[50px] rounded-xl bg-white flex items-center justify-between px-5 cursor-pointer" onClick={handleDropdown}>
                 <div className="flex">
                     <Image
@@ -100,18 +100,22 @@ function Sidebar() {
                 </Link>
             </div>
             <div className="mt-24">
+                <Link href="/contactUs" passHref>
                 <a className="w-[252px] h-[50px] rounded-xl bg-white flex px-5 mt-5 items-center cursor-pointer">
                     <Image
                         src={Chat}
                         alt="Listing" />
                     <span className="text-[#485470] font-semibold text-[18px] ml-3">Contact us</span>
                 </a>
+                </Link>
+                <Link href="/aboutUs" passHref>
                 <a className="w-[252px] h-[50px] rounded-xl bg-white flex px-5 mt-5 items-center cursor-pointer">
                     <Image
                         src={Alert}
                         alt="Listing" />
                     <span className="text-[#485470] font-semibold text-[18px] ml-3">About us</span>
                 </a>
+                </Link>
             </div>
         </div>
     )

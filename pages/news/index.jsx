@@ -27,7 +27,7 @@ function News() {
                     <Sidebar />
                 </div>
                 <div className="w-full pt-8 sm:pl-8 pl-2 overflow-x-hidden">
-                    <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-col gap-5 mt-10 sm:pr-8 pr-2 h-[600px] overflow-y-auto category">
+                    <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-col gap-5 mt-10 sm:pr-8 pr-2 h-[800px] overflow-y-auto category">
                         {NewsImage.map((element, index) => {
                               return  <a className="cursor-pointer" key={index}>
                                     <NewsCard props={element}  />

@@ -72,7 +72,7 @@ function LandingPage() {
                             </div>
                         </div>
                     </div>
-                    <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-col gap-5 mt-10 sm:pr-8 pr-2 h-[600px] overflow-y-auto category">
+                    <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-col gap-5 mt-10 sm:pr-8 pr-2 h-[800px] overflow-y-auto category">
                         {BlogImage.map((Images, index) => {
                             return <Link href="/detailPage" passHref key={index}>
                                 <a className="cursor-pointer">
