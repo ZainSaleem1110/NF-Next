@@ -16,12 +16,13 @@ import Link from 'next/link'
 
 function Sidebar() {
     let handleDropdown = () => {
-        let Dropdown = document.querySelector(".dropdown")
+        let Dropdown = document.querySelector(".dropdownList")
         Dropdown.classList.toggle("dropOpen")
     }
 
     return (
-        <div className="py-10 flex flex-col px-4 items-center h-[150vh]">
+        <div className='h-auto'>
+        <div className="py-10 flex flex-col px-4 items-center">
             <div className="w-[252px] h-[50px] rounded-xl bg-white flex items-center justify-between px-5 cursor-pointer" onClick={handleDropdown}>
                 <div className="flex h-[50px] items-center">
                     <Image
@@ -31,7 +32,7 @@ function Sidebar() {
                 </div>
                 <MdKeyboardArrowDown className="text-[#AD7EFF] text-[24px]" />
             </div>
-            <div className="overflow-hidden dropdown">
+            <div className="dropdownList">
                 <a className="flex px-5 w-[252px] h-[50px] items-center mt-2 border-b cursor-pointer">
                     <Image
                         src={Arrow}
@@ -117,6 +118,7 @@ function Sidebar() {
                 </a>
                 </Link>
             </div>
+        </div>
         </div>
     )
 }

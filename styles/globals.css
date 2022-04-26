@@ -80,15 +80,19 @@ input:checked + .slider:before {
   display: none;
 }
 
-.dropdown{
+.dropdownList{
   height:0px;
   transition: 2s;
+  overflow: hidden;
 }
 .dropOpen{
-  height: 232px;
+  height: 232px !important;
   transition: 2s;
 }
 
 .mobileSidebar{
   width: 100%;
+}
+.verticalScroll::-webkit-scrollbar {
+  visibility: hidden;
 }

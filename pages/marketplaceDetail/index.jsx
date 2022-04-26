@@ -28,7 +28,7 @@ function Marketplaces() {
         <div className="w-[100%] h-[100vh] overflow-hidden">
             <AuthNavbar />
             <div className="flex overflow-hidden h-[100vh]">
-                <div className=" bg-[#F1F4FB] lg:flex hidden overflow-y-auto category w-[370px] h-[80vh]">
+                <div className=" bg-[#F1F4FB] lg:flex hidden overflow-y-auto category w-[370px] 2xl:h-[85vh] h-[80vh]">
                     <Sidebar />
                 </div>
                 <div className="w-full pt-8 sm:pl-8 pl-2 overflow-y-auto category h-[75vh]">
@@ -76,7 +76,7 @@ function Marketplaces() {
                             </div>
                         </div>
                     </div>
-                    <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-col gap-5 mt-10 sm:pr-8 pr-2 h-[80vh]">
+                    <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-col gap-5 mt-10 sm:pr-8 pr-2 2xl:h-[85vh] h-[80vh]">
                         {BlogImage.map((Images, index) => {
                             return <Link href="/detailPage" passHref key={index}>
                                 <a className="cursor-pointer">

@@ -11,8 +11,8 @@ function Favourite() {
     return (
         <div className="w-[100%] h-[100vh] overflow-hidden">
             <AuthNavbar />
-            <div className="flex overflow-hidden h-[80vh]">
-                <div className=" bg-[#F1F4FB] lg:flex hidden overflow-y-auto category w-[370px] h-[80vh]">
+            <div className="flex overflow-hidden 2xl:h-[85vh] h-[80vh]">
+                <div className=" bg-[#F1F4FB] lg:flex hidden overflow-y-auto category w-[370px] 2xl:h-[85vh] h-[80vh]">
                     <Sidebar />
                 </div>
                 <div className="w-full sm:pl-8  pt-8pl-2 overflow-x-hidden pb-5 category">

@@ -17,10 +17,10 @@ function DetailPage() {
             <div className="w-[100%] h-[100vh] overflow-hidden">
             <AuthNavbar />
             <div className="flex overflow-hidden h-[100vh]">
-                <div className=" bg-[#F1F4FB] lg:flex hidden overflow-y-auto category w-[370px] h-[80vh]">
+                <div className=" bg-[#F1F4FB] lg:flex hidden overflow-y-auto category w-[370px] 2xl:h-[85vh] h-[80vh]">
                     <Sidebar />
                 </div>
-                    <div className="w-full py-8 sm:pl-8 pl-2 pr-5 overflow-y-auto category h-[80vh]">
+                    <div className="w-full py-8 sm:pl-8 pl-2 pr-5 overflow-y-auto category 2xl:h-[85vh] h-[80vh]">
                         <div className="">
                             <Link href="/landingPage" passHref>
                                 <a className="text-[15px] text-[#FE7762] font-semibold cursor-pointer">Go Back</a>
@@ -60,7 +60,7 @@ function DetailPage() {
                                     <div className="mt-5">
                                         <p className="text-[20px] text-[#485470] font-bold">Tags</p>
                                     </div>
-                                    <div className="mt-5 h-[52px] flex w-[100%] items-center gap-5 category overflow-x-auto">
+                                    <div className="mt-5 h-[52px] flex w-[100%] items-center gap-5 verticalScroll overflow-x-auto">
                                         <div className="bg-[#F1F4FB] px-4 py-2 rounded-lg text-[#485470] font-semibold cursor-pointer">Collectable</div>
                                         <div className="bg-[#F1F4FB] px-4 py-2 rounded-lg text-[#485470] font-semibold cursor-pointer">Reward</div>
                                         <div className="bg-[#F1F4FB] px-4 py-2 rounded-lg text-[#485470] font-semibold cursor-pointer">Collection</div>

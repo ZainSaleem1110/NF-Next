@@ -10,10 +10,10 @@ function AboutUs() {
         <div className="w-[100%] h-[100vh] overflow-hidden">
             <AuthNavbar />
             <div className="flex overflow-hidden h-[100vh]">
-                <div className=" bg-[#F1F4FB] lg:flex hidden overflow-y-auto category w-[370px] 2xl:h-[100vh] justify-center h-[80vh]">
+                <div className=" bg-[#F1F4FB] lg:flex hidden overflow-y-auto category w-[370px] 2xl:h-[85vh] h-[80vh] justify-center">
                     <Sidebar />
                 </div>
-                <div className="h-[80vh] overflow-y-auto pb-10 category w-full">
+                <div className="2xl:h-[85vh] h-[80vh] overflow-y-auto pb-10 category w-full">
                     <div className="xl:w-[70%] lg:w-[90%] w-[100%] sm:pl-10 pl-5 lg:pr-0 sm:pr-10 pr-5 mt-5  text-[#212121]">
                         <h1 className="text-[28px] font-bold">About NF.Tea</h1>
                         <p className="mt-3 text-[18px]">NFTCalendar is the first calendar in the NFT Universe. We cover the most eye-catching drops, exciting events, and high-profile releases that keep the wheels of the Non-Fungible Token industry turning!</p>
