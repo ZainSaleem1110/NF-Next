@@ -88,3 +88,7 @@ input:checked + .slider:before {
   height: 232px;
   transition: 2s;
 }
+
+.mobileSidebar{
+  width: 100%;
+}

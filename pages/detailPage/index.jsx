@@ -14,14 +14,14 @@ import MobileViewDetailPAge from '../../Components/mobileViewDetailPage'
 function DetailPage() {
     return (
         <>
-            <div className="w-[100%] lg:flex hidden flex-col">
-                <AuthNavbar />
-                <div className="flex">
-                    <div className="w-[290px] bg-[#F1F4FB] lg:flex h-full hidden">
-                        <Sidebar />
-                    </div>
-                    <div className="w-full pt-8 sm:pl-8 pl-2 pr-5 overflow-x-hidden ">
-                        <div className="lg:overflow-y-auto category lg:h-[900px]">
+            <div className="w-[100%] h-[100vh] overflow-hidden">
+            <AuthNavbar />
+            <div className="flex overflow-hidden h-[100vh]">
+                <div className=" bg-[#F1F4FB] lg:flex hidden overflow-y-auto category w-[370px] h-[80vh]">
+                    <Sidebar />
+                </div>
+                    <div className="w-full py-8 sm:pl-8 pl-2 pr-5 overflow-y-auto category h-[80vh]">
+                        <div className="">
                             <Link href="/landingPage" passHref>
                                 <a className="text-[15px] text-[#FE7762] font-semibold cursor-pointer">Go Back</a>
                             </Link>
@@ -60,12 +60,12 @@ function DetailPage() {
                                     <div className="mt-5">
                                         <p className="text-[20px] text-[#485470] font-bold">Tags</p>
                                     </div>
-                                    <div className="mt-5 h-[52px] flex w-[95%] items-center gap-5 category overflow-x-auto">
-                                        <div className="bg-[#F1F4FB] px-4 py-2 rounded-lg text-[#485470] font-semibold">Collectable</div>
-                                        <div className="bg-[#F1F4FB] px-4 py-2 rounded-lg text-[#485470] font-semibold">Reward</div>
-                                        <div className="bg-[#F1F4FB] px-4 py-2 rounded-lg text-[#485470] font-semibold">Collection</div>
-                                        <div className="bg-[#F1F4FB] px-4 py-2 rounded-lg text-[#485470] font-semibold">Game</div>
-                                        <div className="bg-[#F1F4FB] px-4 py-2 rounded-lg text-[#485470] font-semibold">Trending</div>
+                                    <div className="mt-5 h-[52px] flex w-[100%] items-center gap-5 category overflow-x-auto">
+                                        <div className="bg-[#F1F4FB] px-4 py-2 rounded-lg text-[#485470] font-semibold cursor-pointer">Collectable</div>
+                                        <div className="bg-[#F1F4FB] px-4 py-2 rounded-lg text-[#485470] font-semibold cursor-pointer">Reward</div>
+                                        <div className="bg-[#F1F4FB] px-4 py-2 rounded-lg text-[#485470] font-semibold cursor-pointer">Collection</div>
+                                        <div className="bg-[#F1F4FB] px-4 py-2 rounded-lg text-[#485470] font-semibold cursor-pointer">Game</div>
+                                        <div className="bg-[#F1F4FB] px-4 py-2 rounded-lg text-[#485470] font-semibold cursor-pointer">Trending</div>
                                     </div>
                                 </div>
                                 <div className="md:max-w-[400px] w-[100%] md:mt-0 mt-5">

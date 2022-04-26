@@ -21,9 +21,9 @@ function Sidebar() {
     }
 
     return (
-        <div className="w-[290px] h-[950px] py-10 flex flex-col px-4 items-center">
+        <div className="py-10 flex flex-col px-4 items-center h-[150vh]">
             <div className="w-[252px] h-[50px] rounded-xl bg-white flex items-center justify-between px-5 cursor-pointer" onClick={handleDropdown}>
-                <div className="flex">
+                <div className="flex h-[50px] items-center">
                     <Image
                         src={EventIcon}
                         alt="EventIcon" />

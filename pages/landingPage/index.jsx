@@ -26,13 +26,13 @@ const BlogImage = [
 function LandingPage() {
     const router=useRouter()
     return (
-        <div className="w-[100%]">
+        <div className="w-[100%] h-[100vh] overflow-hidden">
             <AuthNavbar />
-            <div className="flex">
-                <div className="w-[290px] bg-[#F1F4FB] lg:flex hidden">
+            <div className="flex overflow-hidden h-[100vh]">
+                <div className=" bg-[#F1F4FB] lg:flex hidden overflow-y-auto category w-[370px] h-[80vh]">
                     <Sidebar />
                 </div>
-                <div className="w-full pt-8 sm:pl-8 pl-2 overflow-x-hidden">
+                <div className="w-full pt-8 sm:pl-8 pl-2 overflow-x-hidden h-[80vh] overflow-y-auto category pb-5">
                     <div className="overflow-x-auto category">
                         <div className="h-[44px] w-[1100px] flex justify-between">
                             <div className="flex px-4 rounded-lg bg-[#AD7EFF] items-center cursor-pointer">
@@ -73,7 +73,7 @@ function LandingPage() {
                             </div>
                         </div>
                     </div>
-                    <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-col gap-5 mt-10 sm:pr-8 pr-2 h-[800px] overflow-y-auto category">
+                    <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-col gap-5 mt-10 sm:pr-8 pr-2">
                         {BlogImage.map((Images, index) => {
                             return <div key={index} onClick={()=>{router.push("/detailPage")}}>
                                 <a className="cursor-pointer">

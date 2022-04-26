@@ -7,6 +7,7 @@ import Img04 from '../../assets/news4.svg'
 import Img05 from '../../assets/news5.svg'
 import Img06 from '../../assets/news6.svg'
 import NewsCard from '../../Components/NewsCard'
+import Link from 'next/link'
 
 const NewsImage = [
     {NewImg:Img01,title:"Walmart Will Soon Use NFTs to Sell Products",detail:"Crypto Eagles Club is a collection of 9999 criminal Eagles NFTs living in the Ethereum network..."},
@@ -20,18 +21,20 @@ const NewsImage = [
 
 function News() {
     return (
-        <div className="w-[100%]">
+        <div className="w-[100%] h-[100vh] overflow-hidden">
             <AuthNavbar />
-            <div className="flex">
-                <div className="w-[290px] bg-[#F1F4FB] lg:flex h-full hidden">
+            <div className="flex overflow-hidden h-[100vh]">
+                <div className=" bg-[#F1F4FB] lg:flex hidden overflow-y-auto category w-[370px] h-[80vh]">
                     <Sidebar />
                 </div>
-                <div className="w-full pt-8 sm:pl-8 pl-2 overflow-x-hidden">
-                    <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-col gap-5 mt-10 sm:pr-8 pr-2 h-[800px] overflow-y-auto category">
+                <div className="w-full pt-8 sm:pl-8 pl-2 overflow-y-auto h-[80vh] pb-10 category">
+                    <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-col gap-5 mt-10 sm:pr-8 pr-2">
                         {NewsImage.map((element, index) => {
-                              return  <a className="cursor-pointer" key={index}>
-                                    <NewsCard props={element}  />
+                            return <Link href="/blogDetail" passHref>
+                                <a className="cursor-pointer" key={index}>
+                                    <NewsCard props={element} />
                                 </a>
+                            </Link>
                         })}
                     </div>
                 </div>

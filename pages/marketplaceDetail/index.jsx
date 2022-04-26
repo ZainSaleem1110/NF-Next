@@ -25,13 +25,13 @@ const BlogImage = [
 
 function Marketplaces() {
     return (
-        <div className="w-[100%]">
+        <div className="w-[100%] h-[100vh] overflow-hidden">
             <AuthNavbar />
-            <div className="flex">
-                <div className="w-[290px] bg-[#F1F4FB] lg:flex h-full hidden">
+            <div className="flex overflow-hidden h-[100vh]">
+                <div className=" bg-[#F1F4FB] lg:flex hidden overflow-y-auto category w-[370px] h-[80vh]">
                     <Sidebar />
                 </div>
-                <div className="w-full pt-8 sm:pl-8 pl-2 overflow-x-hidden">
+                <div className="w-full pt-8 sm:pl-8 pl-2 overflow-y-auto category h-[75vh]">
                     <Link href="/marketplaces" passHref>
                         <a className="text-[15px] text-[#FE7762] font-semibold cursor-pointer">Go Back</a>
                     </Link>
@@ -76,7 +76,7 @@ function Marketplaces() {
                             </div>
                         </div>
                     </div>
-                    <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-col gap-5 mt-10 sm:pr-8 pr-2 h-[600px] overflow-y-auto category">
+                    <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-col gap-5 mt-10 sm:pr-8 pr-2 h-[80vh]">
                         {BlogImage.map((Images, index) => {
                             return <Link href="/detailPage" passHref key={index}>
                                 <a className="cursor-pointer">

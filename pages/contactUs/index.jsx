@@ -5,13 +5,13 @@ import { useRouter } from 'next/router'
 function ContactUs() {
     const router = useRouter()
     return (
-        <div className="w-[100%]">
+        <div className="w-[100%] h-[100vh] overflow-hidden">
             <AuthNavbar />
-            <div className="flex">
-                <div className="w-[290px] bg-[#F1F4FB] lg:flex hidden">
+            <div className="flex overflow-hidden h-[100vh]">
+                <div className=" bg-[#F1F4FB] lg:flex hidden overflow-y-auto category w-[370px] h-[80vh]">
                     <Sidebar />
                 </div>
-                <div className='flex flex-col items-center mt-10 w-full'>
+                <div className='flex flex-col items-center my-10 w-full h-[75vh] overflow-y-auto pb-10 category'>
                 <div className='sm:w-[410px] w-[70%] rounded-t-3xl h-[25px] bg-[#F1F4FB] opacity-50 md:hidden flex'></div>
                     <div className='md:w-[752px] sm:w-[600px] w-[100%] bg-[#F1F4FB] sm:rounded-2xl rounded-t-2xl flex flex-col items-center sm:py-10 pt-10 pb-20 sm:px-10 px-4'>
                         <div className='flex w-full items-center text-[26px] border-b-2 pb-7'>

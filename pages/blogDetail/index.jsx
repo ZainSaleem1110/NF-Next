@@ -1,21 +1,18 @@
 import AuthNavbar from '../../Components/AuthNavbar'
 import Sidebar from '../../Components/Sidebar'
 import Image from 'next/image'
-import { AiOutlineInstagram } from 'react-icons/ai'
-import { FaFacebook, FaTwitter } from 'react-icons/fa'
-import DecordImg from '../../assets/decord-white.svg'
 import Link from 'next/link'
 import Share from '../../assets/share.svg'
 
 function BlogDetail() {
     return (
-        <div className="w-[100%]">
+        <div className="w-[100%] h-[100vh] overflow-hidden">
             <AuthNavbar />
-            <div className="flex">
-                <div className="w-[290px] bg-[#F1F4FB] lg:flex hidden">
+            <div className="flex overflow-hidden h-[100vh]">
+                <div className=" bg-[#F1F4FB] lg:flex justify-center hidden overflow-y-auto category 2xl:h-[100vh] h-[80vh] w-[370px]">
                     <Sidebar />
                 </div>
-                <div className="h-[1000px] overflow-y-auto category pb-10">
+                <div className="h-[80vh] overflow-y-auto category pb-10 w-full">
                     <div className="w-[100%] sm:pl-10 pl-5 lg:pr-0 sm:pr-10 pr-5 mt-5  text-[#212121]">
                         <Link href="/blogs" passHref>
                             <a className="text-[15px] text-[#FE7762] font-semibold cursor-pointer">Go Back</a>
