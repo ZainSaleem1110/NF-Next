@@ -30,8 +30,8 @@ function News() {
                 <div className="w-full pt-8 sm:pl-8 pl-2 overflow-y-auto h-[80vh] pb-10 category">
                     <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-col gap-5 mt-10 sm:pr-8 pr-2">
                         {NewsImage.map((element, index) => {
-                            return <Link href="/blogDetail" passHref>
-                                <a className="cursor-pointer" key={index}>
+                            return <Link href="/blogDetail" passHref key={index}>
+                                <a className="cursor-pointer">
                                     <NewsCard props={element} />
                                 </a>
                             </Link>
