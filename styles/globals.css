@@ -91,7 +91,7 @@ input:checked + .slider:before {
 }
 
 .mobileSidebar{
-  width: 100%;
+  width: 0%;
 }
 .verticalScroll::-webkit-scrollbar {
   visibility: hidden;

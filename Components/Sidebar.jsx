@@ -23,7 +23,7 @@ function Sidebar() {
     return (
         <div className='h-auto'>
         <div className="py-10 flex flex-col px-4 items-center">
-            <div className="w-[252px] h-[50px] rounded-xl bg-white flex items-center justify-between px-5 cursor-pointer" onClick={handleDropdown}>
+            <div className="w-[252px] h-[50px] rounded-xl bg-white flex items-center justify-between px-5 cursor-pointer option" onClick={handleDropdown}>
                 <div className="flex h-[50px] items-center">
                     <Image
                         src={EventIcon}
@@ -60,7 +60,7 @@ function Sidebar() {
             </div>
             <div>
                 <Link href="/marketplaces" passHref>
-                    <a className="w-[252px] h-[50px] rounded-xl bg-white flex px-5 mt-4 items-center cursor-pointer">
+                    <a className="w-[252px] h-[50px] rounded-xl bg-white flex px-5 mt-4 items-center cursor-pointer option">
                         <Image
                             src={World}
                             alt="World" />
@@ -68,7 +68,7 @@ function Sidebar() {
                     </a>
                 </Link>
                 <Link href="/news" passHref>
-                <a className="w-[252px] h-[50px] rounded-xl bg-white flex px-5 mt-5 items-center cursor-pointer">
+                <a className="w-[252px] h-[50px] rounded-xl bg-white flex px-5 mt-5 items-center cursor-pointer option">
                     <Image
                         src={News}
                         alt="News" />
@@ -76,7 +76,7 @@ function Sidebar() {
                 </a>
                 </Link>
                 <Link href="/blogs" passHref>
-                <a className="w-[252px] h-[50px] rounded-xl bg-white flex px-5 mt-5 items-center cursor-pointer">
+                <a className="w-[252px] h-[50px] rounded-xl bg-white flex px-5 mt-5 items-center cursor-pointer option">
                     <Image
                         src={Blog}
                         alt="Blog" />
@@ -84,7 +84,7 @@ function Sidebar() {
                 </a>
                 </Link>
                 <Link href="/favourite" passHref>
-                <a className="w-[252px] h-[50px] rounded-xl bg-white flex px-5 mt-5 items-center cursor-pointer">
+                <a className="w-[252px] h-[50px] rounded-xl bg-white flex px-5 mt-5 items-center cursor-pointer option">
                     <Image
                         src={Heart}
                         alt="Heart" />
@@ -92,7 +92,7 @@ function Sidebar() {
                 </a>
                 </Link>
                 <Link href="/listing" passHref>
-                <a className="w-[252px] h-[50px] rounded-xl bg-white flex px-5 mt-5 items-center cursor-pointer">
+                <a className="w-[252px] h-[50px] rounded-xl bg-white flex px-5 mt-5 items-center cursor-pointer option">
                     <Image
                         src={Listing}
                         alt="Listing" />
@@ -102,7 +102,7 @@ function Sidebar() {
             </div>
             <div className="mt-24">
                 <Link href="/contactUs" passHref>
-                <a className="w-[252px] h-[50px] rounded-xl bg-white flex px-5 mt-5 items-center cursor-pointer">
+                <a className="w-[252px] h-[50px] rounded-xl bg-white flex px-5 mt-5 items-center cursor-pointer option">
                     <Image
                         src={Chat}
                         alt="Listing" />
@@ -110,7 +110,7 @@ function Sidebar() {
                 </a>
                 </Link>
                 <Link href="/aboutUs" passHref>
-                <a className="w-[252px] h-[50px] rounded-xl bg-white flex px-5 mt-5 items-center cursor-pointer">
+                <a className="w-[252px] h-[50px] rounded-xl bg-white flex px-5 mt-5 items-center cursor-pointer option">
                     <Image
                         src={Alert}
                         alt="Listing" />

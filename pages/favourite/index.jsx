@@ -4,6 +4,7 @@ import NotFavourite from '../../assets/notFavourite.svg'
 import Image from 'next/image'
 import BlogCard from '../../Components/favouriteCard'
 import Img01 from '../../assets/Img01.svg'
+import Link from 'next/link'
 
 const Data = []
 
@@ -25,9 +26,13 @@ function Favourite() {
                     )}
                     {Data.length > 0 && (
                         <div className="w-full pt-3 sm:pl-8 pl-2 overflow-x-hidden">
-                        <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-col gap-5 mt-10 sm:pr-8 pr-2 overflow-y-auto category">
-                            <BlogCard BlogImg={Img01}/>
-                        </div>
+                            <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-col gap-5 mt-10 sm:pr-8 pr-2 overflow-y-auto category">
+                                <Link href="/detailPage" passHref>
+                                    <div className='cursor-pointer'>
+                                        <BlogCard BlogImg={Img01} />
+                                    </div>
+                                </Link>
+                            </div>
                         </div>
                     )}
                 </div>
