@@ -37,11 +37,12 @@ function AuthNav() {
     const router = useRouter()
     return (
         <div className='relative'>
-            <div className="bg-[#F1F4FB] w-[100%] xl:py-10 py-5 xl:px-20 sm:px-10 px-5 justify-between flex overflow-x-hidden">
+            <div className="bg-[#F1F4FB] w-[100%] xl:py-10 py-5 xl:pr-20 xl:pl-10 sm:px-10 px-5 justify-between flex overflow-x-hidden">
                 <div className="w-[306px]">
                     <Image
                         src={Logo}
                         alt="Navbar Logo"
+                        className="w-[200px] h-[56px]"
                     />
                 </div>
                 <div className="justify-between w-[100%] lg:flex hidden">
